@@ -1,13 +1,14 @@
 import { Outlet } from "react-router";
-
+import { Nav, Footer } from "../components/site";
 
 function MainLayout() {
     return (
         <> 
-            <main className="min-h-screen">
+            <Nav/>
+            <main className="min-h-screen bg-background text-foreground font-sans overflow-x-hidden">
                 <Outlet />
             </main>    
-
+            <Footer/>
         </>
 
     );
